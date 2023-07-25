@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/4c0141a6a6.js" crossorigin="anonymous"></script>
     <!-- custom fonts -->
     <style>
-        .lato-font{
+        .lato-font {
             font-family: 'Lato', sans-serif;
         }
     </style>
@@ -35,9 +35,75 @@
     </script>
 </head>
 
-<body>
-    <header>
-
+<body class="lato-font">
+    <header class="container mx-auto">
+        <!-- navbar -->
+        <div class="navbar bg-base-100 justify-around lg:bg-[#F85559]  rounded-full m-6 mt-11 text-white">
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-medium text-lg">Home</a></li>
+                    <li tabindex="0">
+                        <summary class="font-medium text-lg">About Us</summary>
+                    </li>
+                    <li><a class="font-medium text-lg">Shop</a></li>
+                    <li><a class="font-medium text-lg">All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="flex gap-1 text-black lg:text-white">
+                <img src="images/logo.png" alt="">
+                <h2 class="text-4xl font-extrabold">Fruit Burst</h2>
+            </div>
+            <div class="hidden lg:inline">
+                <div class=" flex relative">
+                    <input class="text-[#12121266] border-0 py-4 rounded-full pl-7 w-[19rem]" type="text"
+                        placeholder="Search here">
+                    <i class="fa-solid fa-magnifying-glass absolute top-3 right-6 text-2xl text-black"></i>
+                </div>
+            </div>
+            <!-- <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Item 1</a></li>
+          <li>
+            <a>Parent</a>
+          </li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div> -->
+        </div>
+        <!-- banner -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="images/banner1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/banner2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/banner3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="images/banner4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
