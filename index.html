@@ -29,6 +29,7 @@
                     colors: {
                         'btn-color': '#F85559',
                         'desc-color': '#12121266',
+                        'star-color': '#FBC0A8',
                     }
                 }
             }
@@ -63,17 +64,22 @@
                 </div>
             </div>
             <div class="dropdown lg:hidden">
-        <label tabindex="0" class="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-        </label>
-        <ul tabindex="0" class="menu text-black menu-sm dropdown-content -ml-10 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-          <li><a>Item 1</a></li>
-          <li>
-            <a>Parent</a>
-          </li>
-          <li><a>Item 3</a></li>
-        </ul>
-      </div>
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu text-black menu-sm dropdown-content -ml-10 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Item 1</a></li>
+                    <li>
+                        <a>Parent</a>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
         </div>
         <!-- banner -->
         <div class="carousel w-full  mt-14">
@@ -149,8 +155,7 @@
         <!-- extra navbar -->
         <div class="hidden lg:inline relative -top-36">
             <div class="flex mx-auto justify-center">
-                <div
-                    class="grid grid-cols-5  w-[950px] bg-white  shadow py-8 px-5 shadow-[#00000013]">
+                <div class="grid grid-cols-5  w-[950px] bg-white  shadow py-8 px-5 shadow-[#00000013]">
                     <!-- card-1 -->
                     <div class="text-center">
                         <img class="flex justify-center mx-auto" src="images/fruit1.png" alt="">
@@ -231,11 +236,17 @@
                             <hr class="text-desc-color w-3/4 my-3  mx-auto">
                             <p class="font-medium text-desc-color mb-3">Apples</p>
                             <div class="rating text-center mx-auto mb-8 ">
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" checked />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-btn-color" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-gradient-to-r from-btn-color to-star-color"
+                                    checked />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-star-color" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-star-color" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-star-color" />
                             </div>
                             <div class="card-actions justify-center">
                                 <div class="card-actions justify-center">
@@ -250,14 +261,16 @@
                                                 you to pick the most amazing and fresh fruits.</p>
                                             <div class="rating text-center mx-auto mb-5 ">
                                                 <input type="radio" name="rating-1"
-                                                    class="text-btn-color mask mask-star" />
+                                                    class="text-btn-color mask mask-star bg-btn-color" />
                                                 <input type="radio" name="rating-1"
-                                                    class="text-btn-color mask mask-star" checked />
+                                                    class="text-btn-color mask mask-star bg-gradient-to-r from-btn-color to-star-color"
+                                                    checked />
                                                 <input type="radio" name="rating-1"
-                                                    class="text-btn-color mask mask-star" />
+                                                    class="text-btn-color mask mask-star bg-star-color" />
                                                 <input type="radio" name="rating-1"
-                                                    class="text-btn-color mask mask-star" />
-                                                <input type="radio" name="rating-1" class="mask mask-star" />
+                                                    class="text-btn-color mask mask-star bg-star-color" />
+                                                <input type="radio" name="rating-1"
+                                                    class="text-btn-color mask mask-star bg-star-color" />
                                             </div>
                                             <div class="space-x-6">
                                                 <button
@@ -279,11 +292,17 @@
                             <hr class="text-desc-color w-3/4 my-3  mx-auto">
                             <p class="font-medium text-desc-color mb-3">Orange</p>
                             <div class="rating text-center mx-auto mb-8 ">
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" checked />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-btn-color" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-gradient-to-r from-btn-color to-star-color"
+                                    checked />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-star-color" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-star-color" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-star-color" />
                             </div>
                             <div class="card-actions justify-center">
                                 <div class="card-actions justify-center">
@@ -298,14 +317,16 @@
                                                 you to pick the most amazing and fresh fruits.</p>
                                             <div class="rating text-center mx-auto mb-5 ">
                                                 <input type="radio" name="rating-1"
-                                                    class="text-btn-color mask mask-star" />
+                                                    class="text-btn-color mask mask-star bg-btn-color" />
                                                 <input type="radio" name="rating-1"
-                                                    class="text-btn-color mask mask-star" checked />
+                                                    class="text-btn-color mask mask-star bg-gradient-to-r from-btn-color to-star-color"
+                                                    checked />
                                                 <input type="radio" name="rating-1"
-                                                    class="text-btn-color mask mask-star" />
+                                                    class="text-btn-color mask mask-star bg-star-color" />
                                                 <input type="radio" name="rating-1"
-                                                    class="text-btn-color mask mask-star" />
-                                                <input type="radio" name="rating-1" class="mask mask-star" />
+                                                    class="text-btn-color mask mask-star bg-star-color" />
+                                                <input type="radio" name="rating-1"
+                                                    class="text-btn-color mask mask-star bg-star-color" />
                                             </div>
                                             <div class="space-x-6">
                                                 <button
@@ -327,11 +348,17 @@
                             <hr class="text-desc-color w-3/4 my-3  mx-auto">
                             <p class="font-medium text-desc-color mb-3">Red Dragon</p>
                             <div class="rating text-center mx-auto mb-8 ">
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" checked />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-btn-color" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-gradient-to-r from-btn-color to-star-color"
+                                    checked />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-star-color" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-star-color" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-star-color" />
                             </div>
                             <div class="card-actions justify-center">
                                 <div class="card-actions justify-center">
@@ -346,14 +373,16 @@
                                                 you to pick the most amazing and fresh fruits.</p>
                                             <div class="rating text-center mx-auto mb-5 ">
                                                 <input type="radio" name="rating-1"
-                                                    class="text-btn-color mask mask-star" />
+                                                    class="text-btn-color mask mask-star bg-btn-color" />
                                                 <input type="radio" name="rating-1"
-                                                    class="text-btn-color mask mask-star" checked />
+                                                    class="text-btn-color mask mask-star bg-gradient-to-r from-btn-color to-star-color"
+                                                    checked />
                                                 <input type="radio" name="rating-1"
-                                                    class="text-btn-color mask mask-star" />
+                                                    class="text-btn-color mask mask-star bg-star-color" />
                                                 <input type="radio" name="rating-1"
-                                                    class="text-btn-color mask mask-star" />
-                                                <input type="radio" name="rating-1" class="mask mask-star" />
+                                                    class="text-btn-color mask mask-star bg-star-color" />
+                                                <input type="radio" name="rating-1"
+                                                    class="text-btn-color mask mask-star bg-star-color" />
                                             </div>
                                             <div class="space-x-6">
                                                 <button
@@ -375,11 +404,17 @@
                             <hr class="text-desc-color w-3/4 my-3  mx-auto">
                             <p class="font-medium text-desc-color mb-3">Banana</p>
                             <div class="rating text-center mx-auto mb-8 ">
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" checked />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-btn-color" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-gradient-to-r from-btn-color to-star-color"
+                                    checked />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-star-color" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-star-color" />
+                                <input type="radio" name="rating-1"
+                                    class="text-btn-color mask mask-star bg-star-color" />
                             </div>
                             <div class="card-actions justify-center">
                                 <button class="btn text-btn-color bg-white border-none"
@@ -392,12 +427,17 @@
                                             there for
                                             you to pick the most amazing and fresh fruits.</p>
                                         <div class="rating text-center mx-auto mb-5 ">
-                                            <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                            <input type="radio" name="rating-1" class="text-btn-color mask mask-star"
+                                            <input type="radio" name="rating-1"
+                                                class="text-btn-color mask mask-star bg-btn-color" />
+                                            <input type="radio" name="rating-1"
+                                                class="text-btn-color mask mask-star bg-gradient-to-r from-btn-color to-star-color"
                                                 checked />
-                                            <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                            <input type="radio" name="rating-1" class="text-btn-color mask mask-star" />
-                                            <input type="radio" name="rating-1" class="mask mask-star" />
+                                            <input type="radio" name="rating-1"
+                                                class="text-btn-color mask mask-star bg-star-color" />
+                                            <input type="radio" name="rating-1"
+                                                class="text-btn-color mask mask-star bg-star-color" />
+                                            <input type="radio" name="rating-1"
+                                                class="text-btn-color mask mask-star bg-star-color" />
                                         </div>
                                         <div class="space-x-6">
                                             <button
@@ -489,7 +529,7 @@
                     <div class="flex flex-col lg:flex-row items-center gap-6">
                         <i class="fa-solid fa-people-group text-6xl"></i>
                         <div>
-                            <h2 class="font-extrabold text-2xl  text-[#121212]" >Dedicated Team</h2>
+                            <h2 class="font-extrabold text-2xl  text-[#121212]">Dedicated Team</h2>
                             <hr class="mt-2 mb-3 text-black mx-auto lg:mx-0 bg-desc-color w-1/2">
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -498,7 +538,7 @@
                     <div class="flex flex-col lg:flex-row items-center gap-6">
                         <i class="fa-solid fa-heart text-6xl"></i>
                         <div>
-                            <h2 class="font-extrabold text-2xl  text-[#121212]" >Fresh is Best</h2>
+                            <h2 class="font-extrabold text-2xl  text-[#121212]">Fresh is Best</h2>
                             <hr class="mt-2 mb-3 text-black mx-auto lg:mx-0 bg-desc-color w-1/2">
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -513,14 +553,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="px-4 lg:px-0 "> 
+                <div class="px-4 lg:px-0 ">
                     <img src="images/whychoose1.png" alt="">
                 </div>
                 <div class="space-y-10 lg:text-right text-center order-2 lg:order-none">
                     <!-- info-1 -->
                     <div class="flex lg:flex-row flex-col-reverse  gap-6">
                         <div>
-                            <h2 class="font-extrabold text-2xl  text-[#121212]" >Integrated Supplier</h2>
+                            <h2 class="font-extrabold text-2xl  text-[#121212]">Integrated Supplier</h2>
                             <hr class="mt-2 mb-3 text-black ml-auto lg:ml-40 mx-auto lg:mx-0  bg-desc-color w-1/2">
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -529,7 +569,7 @@
                     <!-- info-2 -->
                     <div class="flex items-center gap-6 lg:flex-row flex-col-reverse ">
                         <div>
-                            <h2 class="font-extrabold text-2xl  text-[#121212]" >Sustainable Practice</h2>
+                            <h2 class="font-extrabold text-2xl  text-[#121212]">Sustainable Practice</h2>
                             <hr class="mt-2 mb-3 text-black ml-auto lg:ml-40 mx-auto lg:mx-0  bg-desc-color w-1/2">
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
